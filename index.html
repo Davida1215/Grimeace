@@ -17,7 +17,7 @@
             <p>@Grimeacebundodu</p>
         </div>
 
-        <div id="switch">
+        <div id="switch" onclick="toggleMode()">
             <span></span> <!-- Trilha do switch -->
             <button></button> <!-- Botão móvel -->
         </div>
@@ -54,14 +54,6 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <!-- Alternância de temas -->
-    <script>
-        const html = document.documentElement;
-        const switchButton = document.querySelector("#switch button");
-
-        switchButton.addEventListener("click", () => {
-            html.classList.toggle("light");
-            html.classList.toggle("dark");
-        });
-    </script>
+ <script src="./java.js"></script>
 </body>
 </html>
