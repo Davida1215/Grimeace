@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grimeace</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="profile">
+            <img src="./assets/avatar.png" alt="Foto do Grimeace bundudo.">
+            <p>@Grimeacebundodu</p>
+        </div>
+
+        <div id="switch">
+            <span></span> <!-- Trilha do switch -->
+            <button></button> <!-- Botão móvel -->
+        </div>
+
+        <ul>
+            <li><a href="https://www.youtube.com/channel/UC_nZDTbTkCErkFT3imdoSEA" target="_blank">Inscrever no Grimeace</a></li>
+            <li><a href="https://google.com" target="_blank">Baixar Grimeace</a></li>
+            <li><a href="https://people.com/thmb/Pw69nwOgRv057-8Xz2Jcifv0RNE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x303:751x305):format(webp)/grimace-17fd7eb9f45f496ea47bf260e518cb6a.jpg" target="_blank">Comer Grimeace</a></li>
+            <li><a href="https://www.mcdonalds.com.br/cardapio/lancamentos/mcshake-grimace" target="_blank">Tomar Grimeace</a></li>
+        </ul>
+
+        <div id="links">
+            <a href="https://google.com" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/grimeace69/" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://www.youtube.com/channel/UC_nZDTbTkCErkFT3imdoSEA" target="_blank">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+            <a href="https://google.com" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+        </div>
+
+        <footer>
+            Feito com ♥ pelo <a id="frase" href="https://google.com" target="_blank">maior fã do Grimeace</a>
+        </footer>
+    </div>
+
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!-- Alternância de temas -->
+    <script>
+        const html = document.documentElement;
+        const switchButton = document.querySelector("#switch button");
+
+        switchButton.addEventListener("click", () => {
+            html.classList.toggle("light");
+            html.classList.toggle("dark");
+        });
+    </script>
+</body>
+</html>
