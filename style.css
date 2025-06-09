@@ -73,11 +73,15 @@ body {
   z-index: 1;
   transform: translateY(-50%);
   transition: left 0.3s ease;
+  animation: backgrounds- 0.2s forwards;
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: backgrounds 0.2s forwards;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 
 #switch span {
@@ -158,8 +162,25 @@ footer {
   .dark {
     --bg-url: url(./assets/bg-pc.jpg);
   }
-  .light {
-    --bg-url: url(./assets/bg-light.jpg);
-  }
+    .light {
+     --bg-url: url (./assets/bg-light.jpg);
 } 
- 
+}
+/* animçaõ */
+@keyframes backgrounds {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes backgrounds- {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
