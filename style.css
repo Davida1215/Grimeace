@@ -26,13 +26,16 @@ html.light {
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
   font-family: "Inter", sans-serif;
   color: var(--text-color);
   transition: background 0.3s ease, color 0.3s ease;
+
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 580px;
   margin: 56px auto 0;
   padding: 0 24px;
 }
@@ -149,3 +152,14 @@ footer {
 #frase {
   text-decoration: none;
 }
+
+/* media */
+@media (min-width: 700px ) {
+  .dark {
+    --bg-url: url(./assets/bg-pc.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/bg-light.jpg);
+  }
+} 
+ 
